@@ -1,0 +1,45 @@
+.line-games {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #636363ff;
+  border: 1px solid black;
+}
+.line-games .slot-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 98%;
+  width: 100px;
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.slot-game .game-icon {
+  font-size: 30px;
+}
+.slot-game .game-title {
+  font-size: 20px;
+}
+.sub-title {
+  margin-right: auto;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+p {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+.jogos-button {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+}

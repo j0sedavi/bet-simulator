@@ -1,0 +1,104 @@
+.fa-dice-one {
+  color: #424249;
+}
+.fa-dice-two {
+  color: #ff0000;
+}
+.fa-dice-six {
+  color: #ffff;
+}
+.red {
+  background-color: #ff0000;
+}
+.gray {
+  background-color: #424249;
+}
+.white {
+  background-color: #ffff;
+  
+}
+.area-Game-double {
+  display: flex;
+  background-color: rgba(20,0,0,0.863);
+  border: 1px solid black;
+  width: 100%;
+  height: 125px;
+}
+.area-Game-double .slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 75px;
+  height: auto;
+  width: auto;
+  padding: 5px;
+  margin: auto;
+  background-color: rgba(0,0,0,0.547);
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.fa-caret-down {
+  margin: auto;
+  margin-top: 100px;
+  font-size: 55px;
+}
+.painel .dices  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.painel .dices .slot i{
+  margin-left: 10px;
+  font-size: 25px;
+  color: black;
+}
+.painel .dices .slot {
+  border: 1px solid black;
+  width: 100px;
+  margin: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.painel .dices .slot h1 { 
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+.painel #aposta[type="number"] {
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  padding-left: 5px;
+  font-weight: bold;
+  outline: none;
+  background-color: #363636;
+  border: 1px solid #252525;
+  color: white;
+}
+.painel #aposta[type="number"]:hover {
+  background-color: #454545;
+}
+.inp {
+  margin-top: 10px;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inp i {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+}
+.painel #apostar {
+  background: red;
+  width: 75%;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+}

@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(60,4,4,1) 17%, rgba(47,46,46,1) 26%, rgba(82,80,80,1) 50%, rgba(82,79,79,1) 70%, rgba(104,102,102,1) 100%);
+  background-repeat: no-repeat;
+  background-size: 300vh 250vh;
+}
+.game-area {
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #161616;
+}
+.mine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border: 1px solid black;
+  background: #363636;
+  border-radius: 10px;
+  margin: 2px;
+  text-align: center;
+  font-size: 30px;
+}
+.line {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+h1 {
+  margin-top: 5px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  
+}
+.title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.title-box h2 {
+  color: white;
+  font-size: 22px;
+}
+a {
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 15px;
+  color: seagreen;
+}
+.fa-coins {
+  color: white;
+  margin-left: 10px;
+}
+.hicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+} 
+.fa-bars {
+  color: white;
+  font-size: 25px;
+}
+.options {
+  display: block;
+  position: absolute;
+  margin-top: 50px;
+  background-color: black;
+  width: 100%;
+  height: 150vh;
+  animation: op 1s;
+}
+@keyframes op {
+  from{
+    height: 0;
+  }
+  to{
+    height: 150vh;
+  }
+}
+@keyframes op2 {
+  from{
+    height: 150vh;
+  }
+  to{
+    height: 0;
+  }
+}
+
+ul {
+  color: white;
+  margin-left: 5px;
+  font-weight: bold;
+}
+input {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-left: 5px;
+  width: 100px;
+}
+input[type="button"]{
+  margin-top: 5px;
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: auto;
+  padding: 2px;
+}
+input[type="submit"]{
+  margin-top: 5px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: auto;
+  padding: 2px;
+  font-weight: bold;
+}
+button {
+  background: red;
+  width: 100%;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+#lucros {
+  font-size: 20px;
+}
+#Minas {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#minasText {
+  margin-top: 10px;
+}
+#alert {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0,0,0,0.653);
+}
+#alert .alert-box {
+  position:absolute;
+  width: 300px;
+  height: auto;
+  background-color: rgba(255,255,255,0.612);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+#alert h2 {
+  text-align: center;
+}
+#alert .line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+.conteudo {
+  width: 100%;
+  height: 100%;
+}
+.conteudo p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+.alert-box #ok , .alert-box #cancel {
+  font-weight: bold;
+  margin-left: 15px;
+}
+.alert-box #cancel {
+  background: linear-gradient(to right, hsl(0, 93.5%, 81.8%), hsl(0, 90.6%, 70.8%), hsl(0, 84.2%, 60.2%));
+} 
+.buttons-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.aposta {
+  margin-top: 15px;
+}
+.painel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  border: 1px solid #222222;
+  border-radius: 10px;
+  height: auto;
+  padding: 15px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background: rgb(11,11,11);
+ background: linear-gradient(90deg, rgba(11,11,11,1) 8%, rgba(46,46,46,1) 43%, rgba(62,61,61,1) 100%);
+  background-repeat: no-repeat;
+  background-size: 300vh 300vh;
+}
+.painel select{
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  padding-left: 5px;
+  font-weight: bold;
+  outline: none;
+  background: #363636;
+  border: 1px solid #252525;
+  color: white;
+}
+.painel select:hover {
+  background-color: #454545;
+}
+.painel input[type="number"] {
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  padding-left: 5px;
+  font-weight: bold;
+  outline: none;
+  background-color: #363636;
+  border: 1px solid #252525;
+  color: white;
+}
+.painel input[type="number"]:hover {
+  background-color: #454545;
+}
+.inp i{
+  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+}
+.inp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+#valorAposta[readonly] {
+  background-color: #292929; 
+}
+div[style="text-align:right;position:fixed;bottom:3px;right:3px;width:100%;z-index:999999;cursor:pointer;line-height:0;display:block;"] {
+  background: #00000000;
+  color: #00000000;
+  transform: translate(500vh, 100%);
+}
