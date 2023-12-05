@@ -1,4 +1,3 @@
-var mines_cliked = []
 function alertShow(mode,description,buttonOk,buttonCancel,fun1,fun2) {
   let alert = document.getElementById('alert');
   let ok_alert = document.getElementById('ok');
@@ -174,7 +173,6 @@ setInterval(() => {
   aposta = input1.value;
 }, 10);
 var minasp = [];
-var apostaRealizada = false; // Variável para controlar se uma aposta foi realizada
 function apost() {
 addMines();
   minasp = [];

@@ -1,17 +1,3 @@
-var clicked = [
-  document.getElementById('mines'),
-  document.getElementById('dice'),
-  document.getElementById('crash'),
-  ];
-clicked[0].addEventListener("click", () => {
-  window.location = "mines.html";
-});
-clicked[1].addEventListener("click", () => {
-  window.location = "dice.html";
-});
-clicked[2].addEventListener("click", () => {
-  window.location = "crash.html";
-});
 function alertShow(mode,description,buttonOk,buttonCancel,fun1,fun2) {
   let alert = document.getElementById('alert');
   let ok_alert = document.getElementById('ok');
@@ -96,4 +82,4 @@ function validarStringFormato(str) {
 const coinsGet = document.getElementById('coins');
 setInterval(() => {
   coinsGet.textContent =  getCookie('coins').replace('.',',')
-}, 10);  
+}, 10);

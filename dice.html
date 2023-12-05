@@ -31,19 +31,19 @@
     <h1><i class="fas fa-dice-two"></i> Dice <i class="fas fa-dice-six"></i></h1>
     <i class="fas fa-caret-down" style="color: #ffffff;"></i>
     <div class="area-Game-double">
-      <div class="slot">
+      <div id="slot1" class="slot">
         <i class="fas fa-dice-two"></i>
       </div>
-      <div class="slot">
+      <div id="slot2" class="slot">
         <i class="fas fa-dice-one"></i>
       </div>
-      <div class="slot">
+      <div id="slot3" class="slot">
         <i class="fas fa-dice-six"></i>
       </div>
-      <div class="slot">
+      <div id="slot4" class="slot">
         <i class="fas fa-dice-one"></i>
       </div>
-      <div class="slot">
+      <div id="slot5" class="slot">
         <i class="fas fa-dice-two"></i>
       </div>
     </div>
@@ -66,7 +66,7 @@
         <h1>2X</h1>
       </div>
       </div>
-      <button id="apostar" type="submit">APOSTAR</button>
+      <button onclick="spin()" id="apostar" type="submit">APOSTAR</button>
     </div>
     <div id="alert">
      <div class="alert-box">
@@ -83,5 +83,5 @@
     </div>
   </body>
   <script src="navbar.js" type="text/javascript" charset="utf-8"></script>
-  <script src="double.js" type="text/javascript" charset="utf-8"></script>
+  <script src="dice.js" type="text/javascript" charset="utf-8"></script>
 </html>
