@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>MINES</title>
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <nav>
-      <i class="fas fa-coins"></i>
-      <a id="coins">15,00</a>
-      <div class="title-box">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>MINES</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav>
+    <i class="fas fa-coins"></i>
+    <a id="coins">15,00</a>
+    <a id="addCoins" href="./addcoins.html">+</a>
+    <div class="title-box">
       <h2><i class="fas fa-dice"></i> BET SIMULATOR</h2>
-      </div>
-      <div id="icon" class="hicon">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
-    <div id="options" class="options">
+    </div>
+    <div id="icon" class="hicon">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+  <div id="options" class="options">
     <ul id="ul">
       <li>Início</li>
       <li>Games</li>
@@ -26,49 +29,50 @@
       <li>Conta</li>
       <li>Informações</li>
     </ul>
-    </div>
-    <h1><i class="fas fa-gem"></i> MINES <i class="fas fa-gem"></i></h1>
-    <h1 id="lucros">Lucro:</h1>
-    <div id="area" class="game-area">
+  </div>
+  <h1><i class="fas fa-gem"></i> MINES <i class="fas fa-gem"></i></h1>
+  <h1 id="lucros">Lucro:</h1>
+  <div id="area" class="game-area">
     <!-- area Mines -->
-    </div>
-    <div class="painel">
+  </div>
+  <div class="painel">
     <div class="aposta">
       <div class="inp">
-        
-       <i class="fas fa-coins"></i><input type="number" name="valorAposta" id="valorAposta" value="0.00"/>
+
+        <i class="fas fa-coins"></i><input type="number" name="valorAposta" id="valorAposta" value="0.00" />
       </div>
       <div class="inp">
-      <i class="fas fa-bomb" id="BombIcon"></i><select name="Minas" id="Minas">
-        <option value="3">3💣 | 💵 × 1.1</option>
-        <option value="5">5💣 | 💵 × 1.3</option>
-        <option value="8">8💣 | 💵 × 1.5</option>
-        <option value="11">11💣 | 💵 × 1.7</option>
-        <option value="14">14💣 | 💵 × 2.1</option>
-        <option value="19">19💣 | 💵 × 2.5</option>
-        <option value="23">23💣 | 💵 × 5</option>
-        <option value="24">24💣 | 💵 × 8</option>
-      </select>
-      <br />
-    </div>
+        <i class="fas fa-bomb" id="BombIcon"></i><select name="Minas" id="Minas">
+          <option value="3">3💣 | 💵 X 1.1</option>
+          <option value="5">5💣 | 💵 X 1.3</option>
+          <option value="8">8💣 | 💵 X 1.5</option>
+          <option value="11">11💣 | 💵 X 1.7</option>
+          <option value="14">14💣 | 💵 X 2.1</option>
+          <option value="19">19💣 | 💵 X 2.5</option>
+          <option value="23">23💣 | 💵 X 5</option>
+          <option value="24">24💣 | 💵 X 8</option>
+        </select>
+        <br />
+      </div>
       <br />
       <button id="apostar" type="submit">APOSTAR</button>
     </div>
-    </div>
-    <div id="alert">
-     <div class="alert-box">
+  </div>
+  <div id="alert">
+    <div class="alert-box">
       <h2><i class="fas fa-dice"></i> BET SIMULATOR</h2>
       <div class="line"></div>
-       <div class="conteudo">
-         <p id="Description">Você ganhou 15.00 coins</p>
-       </div>
-       <div class="buttons-box">
-       <button id="ok" type="submit">OK</button>
-       <button id="cancel" type="submit">CANCELAR</button>
-       </div>
-     </div> 
+      <div class="conteudo">
+        <p id="Description">Você ganhou 15.00 coins</p>
+      </div>
+      <div class="buttons-box">
+        <button id="ok" type="submit">OK</button>
+        <button id="cancel" type="submit">CANCELAR</button>
+      </div>
     </div>
-  </body>
-  <script src="navbar.js" type="text/javascript" charset="utf-8"></script>
-  <script src="mines.js" type="text/javascript" charset="utf-8"></script>
+  </div>
+</body>
+<script src="navbar.js" type="text/javascript" charset="utf-8"></script>
+<script src="mines.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

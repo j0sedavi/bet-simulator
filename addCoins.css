@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.item {
+  background-color: black;
+  color: white;
+  width: 350px;
+  display: flex;
+  margin-top: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.item .title {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.item .action {
+  width: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: 5px;
+  background-color: lightgreen;
+  outline-color: blue;
+}
+.item .action:hover {
+  border: 1px solid blue;
+}
