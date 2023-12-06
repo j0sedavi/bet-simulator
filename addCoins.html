@@ -34,15 +34,15 @@
   <div class="menu">
     <div class="item">
       <h1 class="title">10 coins</h1>
-      <button class="action">obter</button>
+      <button onclick='addCoins(10);alertShow(true,"Voce ganhou 10 coins",true,false,closeAlert,null);' class="action">obter</button>
     </div>
     <div class="item">
       <h1 class="title">50 coins</h1>
-      <button class="action">obter</button>
+      <button onclick='addCoins(50);alertShow(true,"Voce ganhou 50 coins",true,false,closeAlert,null);' class="action">obter</button>
     </div>
     <div class="item">
       <h1 class="title">100 Coins</h1>
-      <button class="action">obter</button>
+      <button onclick='addCoins(100);alertShow(true,"Voce ganhou 100 coins",true,false,closeAlert,null);' class="action">obter</button>
     </div>
   </div>
   <div id="alert">
@@ -59,6 +59,8 @@
     </div>
   </div>
 </body>
+<script src="alert.js" type="text/javascript" charset="utf-8"></script>
 <script src="navbar.js" type="text/javascript" charset="utf-8"></script>
+<script src="Coins.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

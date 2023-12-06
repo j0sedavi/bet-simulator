@@ -25,4 +25,5 @@ body {
 }
 .item .action:hover {
   border: 1px solid blue;
+  cursor: pointer;
 }

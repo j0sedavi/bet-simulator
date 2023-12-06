@@ -3,6 +3,8 @@
   padding: 0;
 }
 body {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,32 +100,24 @@ a {
   display: block;
   position: absolute;
   margin-top: 50px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.93);
   width: 100%;
-  height: 150vh;
-  animation: op 1s;
+  height: 0;
+  overflow: hidden;
 }
-@keyframes op {
-  from {
-    height: 0;
-  }
-  to {
-    height: 150vh;
-  }
-}
-@keyframes op2 {
-  from {
-    height: 150vh;
-  }
-  to {
-    height: 0;
-  }
-}
-
 ul {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  list-style: none;
+  width: 100%;
   color: white;
-  margin-left: 5px;
   font-weight: bold;
+  font-size: 30px;
+  gap: 10px;
 }
 input {
   background-color: white;
@@ -173,7 +167,7 @@ button {
   justify-content: center;
   position: absolute;
   width: 100%;
-  height: 120%;
+  height: 150vh;
   background-color: rgba(0, 0, 0, 0.653);
 }
 #alert .alert-box {
@@ -302,4 +296,20 @@ div[style="text-align:right;position:fixed;bottom:3px;right:3px;width:100%;z-ind
 }
 #addCoins:hover {
   color: blue;
+}
+.title-box h2 {
+  cursor: pointer;
+}
+h5 {
+  color: white;
+  margin-top: 50px;
+  font-size: 35px;
+}
+h5:hover {
+  color: red;
+  cursor: pointer;
+}
+#ul li:hover {
+  color: lightblue;
+  cursor: pointer;
 }
