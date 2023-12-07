@@ -1,5 +1,6 @@
 document.body.innerHTML += `<div id="alert"><div class="alert-box"><h2><i class="fas fa-dice"></i> BET SIMULATOR</h2><div class="line"></div><div class="conteudo"><p id="Description">test</p></div><div class="buttons-box"><button id="ok" type="submit">OK</button><button id="cancel" type="submit">CANCELAR</button></div></div></div>`;
 function alertShow(mode, description, buttonOk, buttonCancel, fun1, fun2) {
+  document.body.style.overflow = "hidden";
   let alert = document.getElementById("alert");
   let ok_alert = document.getElementById("ok");
   let cancel_alert = document.getElementById("cancel");
@@ -19,8 +20,9 @@ function alertShow(mode, description, buttonOk, buttonCancel, fun1, fun2) {
     }
   } else {
     alert.style.display = "none";
+    document.body.style.overflowY = "auto";
   }
 }
 const closeAlert = () => {
-  alertShow(false, "teste alerta", true, true, null, null);
+  alertShow(false, "teste", true, true, null, null);
 };

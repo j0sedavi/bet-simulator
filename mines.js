@@ -7,7 +7,6 @@ function mutiplyNumber(numero1, numero2) {
 }
 var aposta_f = 0;
 var BombIcon = document.getElementById("BombIcon");
-// Função para ler um cookie pelo nome
 var lucro = 0;
 
 var lucro = document.getElementById("lucros");
@@ -104,9 +103,14 @@ apostar.addEventListener("click", () => {
       }
       for (var z = 1; z < 26; z++) {
         let element = document.getElementById(`mine${z}`);
-        element.style.fontSize = "0px";
-        element.style.background = "#363636";
-        element.style.color = "";
+        element.style.fontSize = "30px";
+        if (element.textContent == "💎") {
+          element.style.background = "rgba(0,0,0,0);";
+          element.style.color = "rgba(0,0,0,0.755)";
+        }
+        if (element.textContent == "💣") {
+          element.style.background = "red";
+        }
       }
       buttonsShow(true);
       input1.readOnly = false;
@@ -209,6 +213,12 @@ function apost() {
             closeAlert,
             null
           );
+          buttonsShow(true);
+          input1.readOnly = false;
+          apostar.textContent = "Apostar";
+          buttonMode = 1;
+          BombIcon.style.display = "";
+          lucro.style.display = "none";
         }
       }
     };

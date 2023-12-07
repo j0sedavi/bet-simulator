@@ -43,6 +43,7 @@ body {
   margin: 2px;
   text-align: center;
   font-size: 30px;
+  cursor: pointer;
 }
 .line {
   display: flex;
@@ -145,7 +146,7 @@ input[type="submit"] {
 }
 button {
   background: red;
-  width: 100%;
+  width: 200px;
   font-weight: bold;
   border: 1px solid black;
   border-radius: 5px;
@@ -167,7 +168,7 @@ button {
   justify-content: center;
   position: absolute;
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.653);
 }
 #alert .alert-box {
@@ -217,19 +218,24 @@ button {
   justify-content: center;
 }
 .aposta {
-  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 .painel {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85%;
+  width: auto;
   border: 1px solid #222222;
   border-radius: 10px;
   height: auto;
   padding: 15px;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  padding-inline: 50px;
+  margin-top: 10px;
   background: rgb(11, 11, 11);
   background: linear-gradient(
     90deg,
@@ -256,7 +262,7 @@ button {
 }
 .painel input[type="number"] {
   margin-top: 10px;
-  width: 150px;
+  width: 100px;
   height: 50px;
   padding-left: 5px;
   font-weight: bold;
@@ -264,6 +270,11 @@ button {
   background-color: #363636;
   border: 1px solid #252525;
   color: white;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .painel input[type="number"]:hover {
   background-color: #454545;
@@ -312,4 +323,5 @@ h5:hover {
 #ul li:hover {
   color: lightblue;
   cursor: pointer;
+  font-size: 31px;
 }
